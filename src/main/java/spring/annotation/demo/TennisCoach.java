@@ -19,20 +19,11 @@ public class TennisCoach implements Coach{
     @Qualifier("randomFortuneService")
     private FortuneService fortuneService;
 
-//    @Autowired
-//    public TennisCoach(FortuneService fortuneService) {
-//        this.fortuneService = fortuneService;
-//    }
 
     public TennisCoach(){
         log.info("Inside Constructor for fortune service");
     }
 
-//    @Autowired
-//    public void getFortuneService(FortuneService fortuneService){
-//        log.info("Inside Setter for fortune service");
-//        this.fortuneService=fortuneService;
-//    }
 
 
     @Override
@@ -46,12 +37,12 @@ public class TennisCoach implements Coach{
     }
 
     @PostConstruct
-    public void MethodPostConstruct(){
+    public void methodPostConstruct(){
         log.info("Inside MethodPostConstruct");
     }
 
     @PreDestroy
-    public void MethodPreDestroy(){
+    public void methodPreDestroy(){
         log.info("Inside MethodPreDestroy");
     }
 }

@@ -7,7 +7,7 @@ import java.util.Random;
 @Component
 public class RandomFortuneService implements FortuneService{
 
-    private String[] Messages={
+    private String[] messages ={
             "Random message 1",
             "Random message 2",
             "Random message 3"
@@ -17,6 +17,6 @@ public class RandomFortuneService implements FortuneService{
 
     @Override
     public String getFortuneService() {
-        return Messages[random.nextInt(Messages.length)];
+        return messages[random.nextInt(messages.length)];
     }
 }
